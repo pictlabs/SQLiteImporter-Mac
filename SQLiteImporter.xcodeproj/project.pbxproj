@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D41253A415D046AD006A40BD /* testApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D41253A115D046AD006A40BD /* testApp.xcdatamodeld */; };
+		D42326C915D0F0E400DD8594 /* Attractions.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = D42326C615D0F09800DD8594 /* Attractions.json */; };
+		D42326CB15D0F0EF00DD8594 /* Regions.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = D42326C715D0F09800DD8594 /* Regions.json */; };
+		D42326CC15D0F0F200DD8594 /* Restaurant.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = D42326C815D0F09800DD8594 /* Restaurant.json */; };
+		D4EA706D15CEFEAE00F87A15 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4EA706C15CEFEAE00F87A15 /* CoreData.framework */; };
+		D4EA706F15CEFEAE00F87A15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4EA706E15CEFEAE00F87A15 /* Foundation.framework */; };
+		D4EA707215CEFEAE00F87A15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA707115CEFEAE00F87A15 /* main.m */; };
+		D4EA707915CEFEAE00F87A15 /* SQLiteImporter.1 in Copy Files */ = {isa = PBXBuildFile; fileRef = D4EA707815CEFEAE00F87A15 /* SQLiteImporter.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4EA706615CEFEAE00F87A15 /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				D4EA707915CEFEAE00F87A15 /* SQLiteImporter.1 in Copy Files */,
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		D4EA708B15CF059A00F87A15 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				D42326CC15D0F0F200DD8594 /* Restaurant.json in CopyFiles */,
+				D42326CB15D0F0EF00DD8594 /* Regions.json in CopyFiles */,
+				D42326C915D0F0E400DD8594 /* Attractions.json in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D41253A215D046AD006A40BD /* testApp 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "testApp 2.xcdatamodel"; sourceTree = "<group>"; };
+		D41253A315D046AD006A40BD /* testApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testApp.xcdatamodel; sourceTree = "<group>"; };
+		D42326C615D0F09800DD8594 /* Attractions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Attractions.json; sourceTree = "<group>"; };
+		D42326C715D0F09800DD8594 /* Regions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Regions.json; sourceTree = "<group>"; };
+		D42326C815D0F09800DD8594 /* Restaurant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Restaurant.json; sourceTree = "<group>"; };
+		D4EA706815CEFEAE00F87A15 /* SQLiteImporter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SQLiteImporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4EA706C15CEFEAE00F87A15 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D4EA706E15CEFEAE00F87A15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D4EA707115CEFEAE00F87A15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4EA707415CEFEAE00F87A15 /* SQLiteImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SQLiteImporter-Prefix.pch"; sourceTree = "<group>"; };
+		D4EA707815CEFEAE00F87A15 /* SQLiteImporter.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SQLiteImporter.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4EA706515CEFEAE00F87A15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4EA706D15CEFEAE00F87A15 /* CoreData.framework in Frameworks */,
+				D4EA706F15CEFEAE00F87A15 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4EA705D15CEFEAE00F87A15 = {
+			isa = PBXGroup;
+			children = (
+				D4EA707015CEFEAE00F87A15 /* SQLiteImporter */,
+				D4EA706B15CEFEAE00F87A15 /* Frameworks */,
+				D4EA706915CEFEAE00F87A15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4EA706915CEFEAE00F87A15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4EA706815CEFEAE00F87A15 /* SQLiteImporter */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4EA706B15CEFEAE00F87A15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4EA706C15CEFEAE00F87A15 /* CoreData.framework */,
+				D4EA706E15CEFEAE00F87A15 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4EA707015CEFEAE00F87A15 /* SQLiteImporter */ = {
+			isa = PBXGroup;
+			children = (
+				D42326C615D0F09800DD8594 /* Attractions.json */,
+				D42326C715D0F09800DD8594 /* Regions.json */,
+				D42326C815D0F09800DD8594 /* Restaurant.json */,
+				D41253A115D046AD006A40BD /* testApp.xcdatamodeld */,
+				D4EA707115CEFEAE00F87A15 /* main.m */,
+				D4EA707815CEFEAE00F87A15 /* SQLiteImporter.1 */,
+				D4EA707315CEFEAE00F87A15 /* Supporting Files */,
+			);
+			path = SQLiteImporter;
+			sourceTree = "<group>";
+		};
+		D4EA707315CEFEAE00F87A15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4EA707415CEFEAE00F87A15 /* SQLiteImporter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4EA706715CEFEAE00F87A15 /* SQLiteImporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4EA707C15CEFEAE00F87A15 /* Build configuration list for PBXNativeTarget "SQLiteImporter" */;
+			buildPhases = (
+				D4EA706415CEFEAE00F87A15 /* Sources */,
+				D4EA706515CEFEAE00F87A15 /* Frameworks */,
+				D4EA706615CEFEAE00F87A15 /* Copy Files */,
+				D4EA708B15CF059A00F87A15 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLiteImporter;
+			productName = SQLiteImporter;
+			productReference = D4EA706815CEFEAE00F87A15 /* SQLiteImporter */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4EA705F15CEFEAE00F87A15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Richard Geier";
+			};
+			buildConfigurationList = D4EA706215CEFEAE00F87A15 /* Build configuration list for PBXProject "SQLiteImporter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D4EA705D15CEFEAE00F87A15;
+			productRefGroup = D4EA706915CEFEAE00F87A15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4EA706715CEFEAE00F87A15 /* SQLiteImporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4EA706415CEFEAE00F87A15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4EA707215CEFEAE00F87A15 /* main.m in Sources */,
+				D41253A415D046AD006A40BD /* testApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D4EA707A15CEFEAE00F87A15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D4EA707B15CEFEAE00F87A15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D4EA707D15CEFEAE00F87A15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SQLiteImporter/SQLiteImporter-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D4EA707E15CEFEAE00F87A15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SQLiteImporter/SQLiteImporter-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4EA706215CEFEAE00F87A15 /* Build configuration list for PBXProject "SQLiteImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4EA707A15CEFEAE00F87A15 /* Debug */,
+				D4EA707B15CEFEAE00F87A15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4EA707C15CEFEAE00F87A15 /* Build configuration list for PBXNativeTarget "SQLiteImporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4EA707D15CEFEAE00F87A15 /* Debug */,
+				D4EA707E15CEFEAE00F87A15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D41253A115D046AD006A40BD /* testApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D41253A215D046AD006A40BD /* testApp 2.xcdatamodel */,
+				D41253A315D046AD006A40BD /* testApp.xcdatamodel */,
+			);
+			currentVersion = D41253A215D046AD006A40BD /* testApp 2.xcdatamodel */;
+			path = testApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D4EA705F15CEFEAE00F87A15 /* Project object */;
+}

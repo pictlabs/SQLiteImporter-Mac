@@ -1,0 +1,38 @@
+ [
+  { "attractionCount" : 1,
+    "regionLatitude" :39.113056,
+    "regionLongitude" : -84.516111,
+    "regionCity" : "Cincinnati",
+    "regionOverviewText" : "Over-the-Rhine, sometimes shortened to OTR, is a neighborhood in Cincinnati, Ohio. It is believed to be the largest, most intact urban historic         district in the United States.Over-the-Rhine was added to the National Register of Historic Places in 1983 with 943 contributing buildings. Besides being a historic district, the neighborhood has an arts community that is unparalleled within Cincinnati.[10] Over-the-Rhine is bordered by the neighborhoods of Downtown, CUF, Mount Auburn, Pendleton, and the West End. Over-the-Rhine was voted best Cincinnati neighborhood in CityBeat's Best of Cincinnati 2011 and 2012.",
+    "regionState" : "OH",
+    "regionTitle" : "Over-the-Rhine",
+    "regionZipcode" : "45208"},
+  
+  { "attractionCount" : 1,
+    "regionLatitude": 39.1531101,
+    "regionLongitude": -84.5195974,
+    "regionCity": "Cincinnati",
+    "regionOverviewText": "Clifton, incorporated as a village in 1850, is now a neighborhood in the north central part of Cincinnati, Ohio, United States. The area includes the Ludlow Avenue Shopping and Dining District. Clifton is situated around Clifton Avenue, north of Dixmyth Avenue, approximately three miles north of Downtown Cincinnati, Ohio.",
+    "regionState": "OH",
+    "regionTitle":"Clifton",
+    "regionZipcode":"45219"},
+  
+  { "attractionCount": 1,
+    "regionLatitude": 39.088611,
+    "regionLongitude": -84.490278,
+    "regionCity": "Newport",
+  "regionOverviewText": "Founded in 1795, Newport provides an excellent mix of historic amenities and Contemporary development. The community’s riverfront area provides a striking view of the Cincinnati skyline and is host to premier attractions including the Newport Aquarium, Newport on the Levee, and the nearby World Peace Bell. Newport is also home to the East Row Historic District and a revitalized, historic downtown filled with eclectic businesses.",
+    "regionState": "KY",
+    "regionTitle":"Newport",
+    "regionZipcode":"41071"},
+  
+  { "attractionCount": 1,
+    "regionLatitude": 39.133333,
+    "regionLongitude": -84.5,
+    "regionCity": "Cincinnati",
+  "regionOverviewText": "Downtown Cincinnati's streets are arranged in a grid configuration. It is bisected by Vine Street. Often considered to be the heart of Cincinnati, Fountain Square is located in the center of the Central Business District. The 1871 dedicated Tyler Davidson Fountain stands prominently on the often busy city square. Downtown Cincinnati is marked by its large collection of historic architecture and contains several historic districts on the National Register.",
+    "regionState": "OH",
+    "regionTitle":"Downtown Cincinnati",
+    "regionZipcode":"45208"}
+  
+  ]
