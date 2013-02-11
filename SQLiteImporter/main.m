@@ -41,9 +41,16 @@ static NSManagedObjectContext *managedObjectContext()
         
         NSError *error;
         NSPersistentStore *newStore = [coordinator addPersistentStoreWithType:STORE_TYPE configuration:nil URL:url options:nil error:&error];
-        if (newStore == nil) {
-            NSLog(@"Store Configuration Failure %@", ([error localizedDescription] != nil) ? [error localizedDescription] : @"Unknown Error");
+        if([[error domain] isEqualToString:@"NSCocoaErrorDomain"] && [error code] == 134100) {
+            NSLog(@"Core Data model was updated.  Deleting old persistent store.");
+            [[NSFileManager defaultManager] removeItemAtURL:url error:nil];
+            newStore = [coordinator addPersistentStoreWithType:STORE_TYPE configuration:nil URL:url options:nil error:&error];
+            if (newStore == nil) {
+                NSLog(@"Store Configuration Failure %@", ([error localizedDescription] != nil) ? [error localizedDescription] : @"Unknown Error");
+            }
+            
         }
+        
     }
     return context;
 }
@@ -126,6 +133,23 @@ int main(int argc, const char * argv[])
             [attractionInfo setValue:[obj objectForKey:@"attractionState"] forKey:@"attractionState"];
             [attractionInfo setValue:[obj objectForKey:@"attractionTitle"] forKey:@"attractionTitle"];
             [attractionInfo setValue:[obj objectForKey:@"attractionZipcode"] forKey:@"attractionZipcode"];
+            
+            
+            NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+            NSEntityDescription *entity = [NSEntityDescription entityForName:@"Region"
+                                                      inManagedObjectContext:context];
+            [fetchRequest setEntity:entity];
+            NSError *regionErrorFinal = nil;
+            NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&regionErrorFinal];
+            for (NSManagedObject *info in fetchedObjects) {
+                if([[info valueForKey:@"regionTitle"] isEqualToString:[obj objectForKey:@"region"]]){
+                    NSLog(@"Name Matched on: %@", [info valueForKey:@"regionTitle"]);
+                    [attractionInfo setValue:info forKey:@"region"];
+                }
+                
+            }
+            
+            
             //[attractionInfo setValue:[obj objectForKey:@"region"] forKey:@"region"];
             
             
