@@ -41,7 +41,6 @@ static NSManagedObjectContext *managedObjectContext()
         
         NSError *error;
         NSPersistentStore *newStore = [coordinator addPersistentStoreWithType:STORE_TYPE configuration:nil URL:url options:nil error:&error];
-        
         if (newStore == nil) {
             NSLog(@"Store Configuration Failure %@", ([error localizedDescription] != nil) ? [error localizedDescription] : @"Unknown Error");
         }
