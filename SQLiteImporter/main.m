@@ -139,15 +139,25 @@ int main(int argc, const char * argv[])
             NSEntityDescription *entity = [NSEntityDescription entityForName:@"Region"
                                                       inManagedObjectContext:context];
             [fetchRequest setEntity:entity];
+            
+            NSPredicate *predicate =[NSPredicate predicateWithFormat:@"regionTitle == %@",[obj objectForKey:@"region"]];
+            [fetchRequest setPredicate:predicate];
+            
             NSError *regionErrorFinal = nil;
             NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:&regionErrorFinal];
-            for (NSManagedObject *info in fetchedObjects) {
-                if([[info valueForKey:@"regionTitle"] isEqualToString:[obj objectForKey:@"region"]]){
-                    NSLog(@"Name Matched on: %@", [info valueForKey:@"regionTitle"]);
-                    [attractionInfo setValue:info forKey:@"region"];
-                }
+            if (fetchedObjects == nil) {
                 
+            }else
+            {
+                [attractionInfo setValue:fetchedObjects[0] forKey:@"Region"];
+                NSLog(@"There were %ld regions identified", (unsigned long)[fetchedObjects count]);
+                NSLog(@"Saved region relation %@", fetchedObjects[0]);
             }
+                
+                
+        
+                
+
             
             
             //[attractionInfo setValue:[obj objectForKey:@"region"] forKey:@"region"];
