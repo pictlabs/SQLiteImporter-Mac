@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D41253A415D046AD006A40BD /* testApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D41253A115D046AD006A40BD /* testApp.xcdatamodeld */; };
 		D42326C915D0F0E400DD8594 /* Attractions.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = D42326C615D0F09800DD8594 /* Attractions.json */; };
 		D42326CB15D0F0EF00DD8594 /* Regions.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = D42326C715D0F09800DD8594 /* Regions.json */; };
 		D42326CC15D0F0F200DD8594 /* Restaurant.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = D42326C815D0F09800DD8594 /* Restaurant.json */; };
+		D43224E016C9DD8400E4BF32 /* CTModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D43224DE16C9DD8400E4BF32 /* CTModel.xcdatamodeld */; };
 		D4EA706D15CEFEAE00F87A15 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4EA706C15CEFEAE00F87A15 /* CoreData.framework */; };
 		D4EA706F15CEFEAE00F87A15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4EA706E15CEFEAE00F87A15 /* Foundation.framework */; };
 		D4EA707215CEFEAE00F87A15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4EA707115CEFEAE00F87A15 /* main.m */; };
@@ -44,11 +44,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D41253A215D046AD006A40BD /* testApp 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "testApp 2.xcdatamodel"; sourceTree = "<group>"; };
-		D41253A315D046AD006A40BD /* testApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testApp.xcdatamodel; sourceTree = "<group>"; };
 		D42326C615D0F09800DD8594 /* Attractions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Attractions.json; sourceTree = "<group>"; };
 		D42326C715D0F09800DD8594 /* Regions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Regions.json; sourceTree = "<group>"; };
 		D42326C815D0F09800DD8594 /* Restaurant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Restaurant.json; sourceTree = "<group>"; };
+		D43224DF16C9DD8400E4BF32 /* CTModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CTModel.xcdatamodel; sourceTree = "<group>"; };
 		D4EA706815CEFEAE00F87A15 /* SQLiteImporter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SQLiteImporter; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4EA706C15CEFEAE00F87A15 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D4EA706E15CEFEAE00F87A15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -99,10 +98,10 @@
 		D4EA707015CEFEAE00F87A15 /* SQLiteImporter */ = {
 			isa = PBXGroup;
 			children = (
+				D43224DE16C9DD8400E4BF32 /* CTModel.xcdatamodeld */,
 				D42326C615D0F09800DD8594 /* Attractions.json */,
 				D42326C715D0F09800DD8594 /* Regions.json */,
 				D42326C815D0F09800DD8594 /* Restaurant.json */,
-				D41253A115D046AD006A40BD /* testApp.xcdatamodeld */,
 				D4EA707115CEFEAE00F87A15 /* main.m */,
 				D4EA707815CEFEAE00F87A15 /* SQLiteImporter.1 */,
 				D4EA707315CEFEAE00F87A15 /* Supporting Files */,
@@ -171,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4EA707215CEFEAE00F87A15 /* main.m in Sources */,
-				D41253A415D046AD006A40BD /* testApp.xcdatamodeld in Sources */,
+				D43224E016C9DD8400E4BF32 /* CTModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,14 +270,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D41253A115D046AD006A40BD /* testApp.xcdatamodeld */ = {
+		D43224DE16C9DD8400E4BF32 /* CTModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D41253A215D046AD006A40BD /* testApp 2.xcdatamodel */,
-				D41253A315D046AD006A40BD /* testApp.xcdatamodel */,
+				D43224DF16C9DD8400E4BF32 /* CTModel.xcdatamodel */,
 			);
-			currentVersion = D41253A215D046AD006A40BD /* testApp 2.xcdatamodel */;
-			path = testApp.xcdatamodeld;
+			currentVersion = D43224DF16C9DD8400E4BF32 /* CTModel.xcdatamodel */;
+			name = CTModel.xcdatamodeld;
+			path = ../CTModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
